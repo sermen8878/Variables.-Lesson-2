@@ -1,12 +1,12 @@
 public class Main {
         public static void main(String[] args) {
-            int bottlesPerMinute = 8;
-            int bottlesIn20Minutes = bottlesPerMinute * 20;
-            System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок.");
-            int bottlesPerDay = bottlesPerMinute * 1440;
-            System.out.println("За сутки машина произвела " + bottlesPerDay + " штук бутылок.");
-            int bottlesIn3Days = bottlesPerDay * 3;
-            System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок.");
-
+            int totalPaintCans = 120;
+            int whitePaintPerClass = 2;
+            int brownPaintPerClass = 4;
+            int totalPaintPerClass = whitePaintPerClass + brownPaintPerClass;
+            int numberOfClasses = totalPaintCans / totalPaintPerClass;
+            int totalWhitePaint = whitePaintPerClass * numberOfClasses;
+            int totalBrownPaint = brownPaintPerClass * numberOfClasses;
+            System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + totalWhitePaint + " банок белой краски и " + totalBrownPaint + " банок коричневой краски.");
         }
     }
