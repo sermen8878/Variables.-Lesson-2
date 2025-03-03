@@ -7,6 +7,7 @@ public class Main {
             System.out.println("За сутки машина произвела " + bottlesPerDay + " штук бутылок.");
             int bottlesIn3Days = bottlesPerDay * 3;
             System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок.");
-
+            int bottlesIn1Month = bottlesPerDay * 30;
+            System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " штук бутылок.");
         }
     }
