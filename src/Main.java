@@ -1,7 +1,7 @@
 public class Main {
         public static void main(String[] args) {
 
-            double mashasSalary = 67760;
+            double mashasSalary  = 67760;
             double denisSalary = 83690;
             double kristinasSalary = 76230;
 
