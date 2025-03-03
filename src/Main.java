@@ -1,13 +1,31 @@
 public class Main {
         public static void main(String[] args) {
-            int targetWeightLoss = 7000;
-            int lossPerDayMin = 250;
-            int lossPerDayMax = 500;
-            int daysMinLoss = targetWeightLoss / lossPerDayMin;
-            int daysMaxLoss = targetWeightLoss / lossPerDayMax;
-            int averageDays = (daysMinLoss + daysMaxLoss) / 2;
-            System.out.println("Если спортсмен будет терять по 250 грамм в день, то на похудение уйдет " + daysMinLoss + " дней.");
-            System.out.println("Если спортсмен будет терять по 500 грамм в день, то на похудение уйдет " + daysMaxLoss + " дней.");
-            System.out.println("В среднем может потребоваться " + averageDays + " дней для достижения результата.");
+
+            double mashasSalary = 67760;
+            double denisSalary = 83690;
+            double kristinasSalary = 76230;
+
+
+            double mashasNewSalary = mashasSalary * 1.10;
+            double denisNewSalary = denisSalary * 1.10;
+            double kristinasNewSalary = kristinasSalary * 1.10;
+
+
+            double mashasAnnualIncomeBefore = mashasSalary * 12;
+            double denisAnnualIncomeBefore = denisSalary * 12;
+            double kristinasAnnualIncomeBefore = kristinasSalary * 12;
+
+
+            double mashasAnnualIncomeAfter = mashasNewSalary * 12;
+            double denisAnnualIncomeAfter = denisNewSalary * 12;
+            double kristinasAnnualIncomeAfter = kristinasNewSalary * 12;
+
+            double mashasDifference = mashasAnnualIncomeAfter - mashasAnnualIncomeBefore;
+            double denisDifference = denisAnnualIncomeAfter - denisAnnualIncomeBefore;
+            double kristinasDifference = kristinasAnnualIncomeAfter - kristinasAnnualIncomeBefore;
+
+            System.out.println("Маша теперь получает " + mashasNewSalary + " рублей. Годовой доход вырос на " + mashasDifference + " рублей.");
+            System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisDifference + " рублей.");
+            System.out.println("Кристина теперь получает " + kristinasNewSalary + " рублей. Годовой доход вырос на " + kristinasDifference + " рублей.");
         }
     }
