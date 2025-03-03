@@ -1,22 +1,13 @@
 public class Main {
         public static void main(String[] args) {
-            int bananasCount = 5;
-            int bananaWeight = 80;
-            int totalBananaWeight = bananasCount * bananaWeight;
-
-            int milkVolume = 200;
-            double milkWeightPer100ml = 105;
-            double totalMilkWeight = milkVolume * (milkWeightPer100ml / 100);
-
-            int iceCreamCount = 2;
-            int iceCreamWeight = 100;
-            int totalIceCreamWeight = iceCreamCount * iceCreamWeight;
-
-            int eggsCount = 4;
-            int eggWeight = 70;
-            int totalEggsWeight = eggsCount * eggWeight;
-            double totalWeightGrams = totalBananaWeight + totalMilkWeight + totalIceCreamWeight + totalEggsWeight;
-            double totalWeightKilograms = totalWeightGrams / 1000;
-             System.out.println("Вес спортзавтрака: " + totalWeightGrams + " грамм или " + totalWeightKilograms + " килограмм.");
+            int targetWeightLoss = 7000;
+            int lossPerDayMin = 250;
+            int lossPerDayMax = 500;
+            int daysMinLoss = targetWeightLoss / lossPerDayMin;
+            int daysMaxLoss = targetWeightLoss / lossPerDayMax;
+            int averageDays = (daysMinLoss + daysMaxLoss) / 2;
+            System.out.println("Если спортсмен будет терять по 250 грамм в день, то на похудение уйдет " + daysMinLoss + " дней.");
+            System.out.println("Если спортсмен будет терять по 500 грамм в день, то на похудение уйдет " + daysMaxLoss + " дней.");
+            System.out.println("В среднем может потребоваться " + averageDays + " дней для достижения результата.");
         }
     }
