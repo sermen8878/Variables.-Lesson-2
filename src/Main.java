@@ -1,14 +1,12 @@
 public class Main {
         public static void main(String[] args) {
-            // Объявляем переменные
-            int ludmilaStudents = 23;
-            int annaStudents = 27;
-            int ekaterinaStudents = 30;
-            int totalPaper = 480;
-            int totalStudents = ludmilaStudents + annaStudents + ekaterinaStudents;
-            double paperPerStudent = (double) totalPaper / totalStudents;
-            System.out.printf("На каждого ученика рассчитано %.1f листов бумаги%n", paperPerStudent);
-
+            int bottlesPerMinute = 8;
+            int bottlesIn20Minutes = bottlesPerMinute * 20;
+            System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок.");
+            int bottlesPerDay = bottlesPerMinute * 1440;
+            System.out.println("За сутки машина произвела " + bottlesPerDay + " штук бутылок.");
+            int bottlesIn3Days = bottlesPerDay * 3;
+            System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок.");
 
         }
     }
